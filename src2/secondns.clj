@@ -7,6 +7,10 @@
 
 (def notafunc false)
 
+(defn func-the-second
+  []
+  notafunc)
+
 (defn other-func
   []
   (func))
