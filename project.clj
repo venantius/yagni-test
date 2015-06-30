@@ -3,8 +3,9 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.6.0"]]
-  :plugins [[venantius/yagni "0.1.0-SNAPSHOT"]]
+  :dependencies [[org.clojure/clojure "1.6.0"]
+                 [venantius/yagni "0.1.2-SNAPSHOT"]]
+  :plugins [[venantius/yagni "0.1.2-SNAPSHOT"]]
   :main ^:skip-aot yagni-test.core
   :source-paths ["src" "src2"]
   :target-path "target/%s"
