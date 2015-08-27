@@ -14,5 +14,19 @@
   (foo [this]
     false))
 
+(defrecord UsedRecord1 [])
+
+(defrecord UsedRecord2 [])
+
+(defrecord UnusedRecord [])
+
+(deftype UnusedType [])
+
 (defprotocol UnusedProtocol
   (flub [this]))
+
+(defn sample
+  []
+  (new UsedRecord1)
+  (UsedRecord2.)
+  (foo (UsedTypeImplementingUsedProtocol.)))
